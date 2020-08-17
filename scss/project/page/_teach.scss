@@ -1,0 +1,1115 @@
+// main: ../../style.scss
+
+/*  teach
+------------------------------------------------------------------------------*/
+
+/* ---------------------------------- hero */
+
+.teach-hero {
+  position: relative;
+  height: vw-sp(1000);
+  background-image: url(../img/teach/teach-hero_sp.jpg);
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.teach-hero__in {
+  position: relative;
+  margin: 0 auto;
+  width: vw-sp(700);
+}
+
+.teach-hero-content {
+  padding-top: vw-sp(60);
+  text-align: center;
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .teach-hero {
+    height: vw-pc(600);
+    background-image: url(../img/teach/teach-hero.jpg);
+    background-position: center;
+  }
+
+  .teach-hero__in {
+    width: vw-pc(1400);
+  }
+
+  .teach-hero-content {
+    padding-top: vw-pc(160);
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .teach-hero {
+    height: 600px;
+  }
+
+  .teach-hero__in {
+    width: 1400px;
+  }
+
+  .teach-hero-content {
+    padding-top: 160px;
+  }
+}
+
+/* ----------------- テキスト - */
+
+
+.teach-hero-catch {
+  position: relative;
+  margin-bottom: 1em;
+  color: $color-base;
+  font-size: vw-sp(48);
+  font-weight: 700;
+  text-align: center;
+  line-height: 2em;
+  letter-spacing: .2em;
+  white-space: nowrap;
+}
+
+.teach-hero-catch strong {
+  color: #f9ff49;
+  span {
+    position: relative;
+  }
+
+  span:before {
+    position: absolute;
+    top: -1.1em;
+    left: 50%;
+    content: '・';
+    color: #f9ff49;
+    font-weight: 700;
+    transform: translateX(-50%);
+  }
+}
+
+
+@media screen and (min-width: $breakpoint1) {
+
+
+  .teach-hero-catch {
+    font-size: vw-pc(36);
+    text-align: left;
+    line-height: 1.8em;
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .teach-hero-catch {
+    font-size: 36px; font-size: 3.6rem;
+  }
+}
+
+
+.teach-hero-header {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2em;
+  background-color: #29b2e6;
+  height: vw-sp(120);
+  transform: skewX(-35deg);
+  z-index: 2;
+}
+
+.teach-hero-header:after {
+  content: '';
+  position: absolute;
+  top: vw-sp(-35);
+  left: vw-sp(-15);
+  display: inline-block;
+  width: vw-sp(68);
+  height: vw-sp(145);
+  background-image: url(../img/teach/hero-illust.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: skewX(35deg);
+  z-index: 2;
+}
+
+.teach-hero-head {
+  padding-left: .5em;
+  color: $color-base;
+  font-size: vw-sp(46);
+  font-weight: 700;
+  letter-spacing: .2em;
+  transform: skewX(35deg);
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .teach-hero-header {
+    left: vw-pc(30);
+    height: vw-pc(90);
+    padding: 0 4em;
+  }
+
+  .teach-hero-header:after {
+    top: vw-pc(-25);
+    left: vw-pc(-15);
+    width: vw-pc(48);
+    height: vw-pc(102);
+  }
+
+  .teach-hero-head {
+    font-size: vw-pc(36);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .teach-hero-header {
+    left: 30px;
+    height: 90px;
+  }
+
+  .teach-hero-header:after {
+    top: -25px;
+    left: -15px;
+    width: 48px;
+    height: 102px;
+  }
+
+  .teach-hero-head {
+    font-size: 36px; font-size: 3.6rem;
+  }
+}
+
+
+/* ---------------------------------- btn */
+
+.teach-hero-btn {
+  margin: vw-sp(40) auto 0 auto;
+  width: vw-sp(620);
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .teach-hero-btn {
+    margin: vw-pc(30) 0 0 0;
+    width: vw-pc(560);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .teach-hero-btn {
+    margin: 30px 0 0 0;
+    width: 560px;
+  }
+}
+
+/* ---------------------------------- concept --> section */
+
+.sec--teach-concept {
+  padding: vw-sp(120) 0;
+  background-image: url(../img/teach/concept-bg.jpg);
+  background-size: cover;
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .sec--teach-concept {
+    padding: vw-pc(110) 0 vw-pc(120) 0;;
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .sec--teach-concept {
+    padding: 110px 0 120px 0;
+  }
+}
+
+
+/* ---------------------------------- concept --> heading */
+
+.cmn-head--teach-concept {
+  margin-bottom: vw-sp(150);
+  text-align: center;
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .cmn-head--teach-concept {
+    margin-bottom: vw-pc(90);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .cmn-head--teach-concept {
+    margin-bottom: 90px;
+  }
+}
+
+
+/* ---------------------------------- what --> section */
+
+.sec--teach-what {
+  padding: vw-sp(100) 0 vw-sp(100) 0;
+}
+
+.sec--teach-what:before,
+.sec--teach-what:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.sec--teach-what:before {
+  left: vw-sp(-80);
+  width: vw-sp(308);
+  height: vw-sp(750);
+  background-image: url(../img/bg/bg-left.png);
+}
+
+.sec--teach-what:after {
+  right: vw-sp(-80);
+  width: vw-sp(330);
+  height: vw-sp(726);
+  background-image: url(../img/bg/bg-right.png);
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .sec--teach-what {
+    padding: vw-pc(110) 0 vw-pc(120) 0;;
+  }
+
+  .sec--teach-what:before {
+    left: 0;
+    width: vw-pc(308);
+    height: vw-pc(750);
+  }
+
+  .sec--teach-what:after {
+    right: 0;
+    width: vw-pc(330);
+    height: vw-pc(726);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .sec--teach-what {
+    padding: 110px 0 120px 0;
+  }
+
+  .sec--teach-what:before {
+    width: 308px;
+    height: 750px;
+  }
+
+  .sec--teach-what:after {
+    width: 330px;
+    height: 726px;
+  }
+}
+
+
+/* ---------------------------------- what --> heading */
+
+.cmn-head--teach-what {
+  margin-bottom: vw-sp(80);
+  text-align: center;
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .cmn-head--teach-what {
+    margin-bottom: vw-pc(90);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .cmn-head--teach-what {
+    margin-bottom: 90px;
+  }
+}
+
+
+/* ---------------------------------- what --> conponent */
+
+
+.teach-what li {
+  margin: 0 auto vw-sp(60) auto;
+  width: vw-sp(640);
+  border: vw-sp(3) solid $color-text;
+}
+
+.teach-what li:last-child {
+  margin-bottom: 0;
+}
+
+.teach-what-content {
+  padding: vw-sp(30) vw-sp(30) vw-sp(35) vw-sp(30);
+  p {
+    line-height: 1.8em;
+  }
+}
+
+.teach-what-head {
+  margin-bottom: .7em;
+  font-size: vw-sp(34);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.6em;
+}
+
+
+@media screen and (min-width: $breakpoint1) {
+
+  .teach-what {
+    display: flex;
+    justify-content: space-between
+  }
+
+  .teach-what li {
+    margin: 0;
+    width: vw-pc(380);
+    border: vw-pc(2) solid $color-text;
+  }
+
+  .teach-what-content {
+    padding: vw-pc(20) vw-pc(20) vw-pc(25) vw-pc(20);
+  }
+
+  .teach-what-head {
+    font-size: vw-pc(24);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .teach-what {
+    display: flex;
+    justify-content: space-between
+  }
+
+  .teach-what li {
+    margin-bottom: 0;
+    width: 380px;
+    border: 2px solid $color-text;
+  }
+
+  .teach-what-content {
+    padding: 20px 20px 25px 20px;
+  }
+
+  .teach-what-head {
+    font-size: 24px; font-size: 2.4rem;
+  }
+}
+
+
+/* ---------------------------------- process --> section */
+
+.sec--teach-process {
+  padding: vw-sp(120) 0;
+  background-image: url(../img/teach/process-bg.jpg);
+  background-size: cover;
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .sec--teach-process {
+    padding: vw-pc(110) 0 vw-pc(120) 0;;
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .sec--teach-process {
+    padding: 110px 0 120px 0;
+  }
+}
+
+
+/* ---------------------------------- process --> heading */
+
+.cmn-head--teach-process {
+  margin-bottom: vw-sp(80);
+  text-align: center;
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .cmn-head--teach-process {
+    margin-bottom: vw-pc(50);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .cmn-head--teach-process {
+    margin-bottom: 50px;
+  }
+}
+
+
+/* ---------------------------------- concept --> conponent */
+
+
+.teach-process-box {
+  position: relative;
+  padding: vw-sp(50) vw-sp(30);
+  width: 100%;
+  background-color: $color-base;
+  box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.2);
+}
+
+.teach-process {
+  position: relative;
+  width: 100%;
+}
+
+.teach-process li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: vw-sp(50);
+  z-index: 2;
+}
+
+.teach-process li:after {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: vw-sp(100);
+  width: vw-sp(15);
+  height: 100%;
+  background-color: #f8f8f8;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.teach-process li:last-child::after {
+  content: none;
+}
+
+.teach-process-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: vw-sp(200);
+  height: vw-sp(200);
+  background-color: #f8f8f8;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 2;
+}
+
+.teach-process-num {
+  display: inline-block;
+  margin-top: .5em;
+  font-family: $font2;
+  font-size: vw-sp(28);
+  font-weight: 700;
+  text-align: center;
+  @include marker;
+}
+
+.teach-process-content {
+  width: vw-sp(400);
+  p {
+    line-height: 1.8em;
+  }
+}
+
+.teach-process-head {
+  margin-bottom: .5em;
+  font-size: vw-sp(34);
+  font-weight: 700;
+}
+
+.teach-process li:nth-child(1) .teach-process-icon img {
+  width: vw-sp(55);
+}
+
+.teach-process li:nth-child(2) .teach-process-icon img {
+  width: vw-sp(75);
+}
+
+.teach-process li:nth-child(3) .teach-process-icon img {
+  width: vw-sp(51);
+}
+
+.teach-process li:nth-child(4) .teach-process-icon img {
+  width: vw-sp(64);
+}
+
+.teach-process li:nth-child(5) .teach-process-icon img {
+  width: vw-sp(65);
+}
+
+.teach-process-illust01 {
+  position: absolute;
+  top: vw-sp(320);
+  right: vw-sp(50);
+  width: vw-sp(65);
+}
+
+.teach-process-illust02 {
+  position: absolute;
+  top: vw-sp(760);
+  right: vw-sp(80);
+  width: vw-sp(100);
+}
+
+.teach-process-illust03 {
+  position: absolute;
+  bottom: vw-sp(395);
+  right: vw-sp(60);
+  width: vw-sp(60);
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .teach-process-box {
+    padding: vw-pc(60) vw-pc(80);
+  }
+
+  .teach-process li {
+    align-items: center;
+    margin-bottom: vw-pc(40);
+  }
+
+  .teach-process li:after {
+    left: vw-pc(90);
+    width: vw-pc(10);
+  }
+
+  .teach-process-circle {
+    width: vw-pc(190);
+    height: vw-pc(190);
+  }
+
+  .teach-process-num {
+    margin-top: 1em;
+    font-size: vw-pc(18);
+  }
+
+  .teach-process-content {
+    width: vw-pc(905);
+  }
+
+  .teach-process-head {
+    font-size: vw-pc(24);
+  }
+
+  .teach-process li:nth-child(1) .teach-process-icon img {
+    width: vw-pc(55);
+  }
+
+  .teach-process li:nth-child(2) .teach-process-icon img {
+    width: vw-pc(75);
+  }
+
+  .teach-process li:nth-child(3) .teach-process-icon img {
+    width: vw-pc(51);
+  }
+
+  .teach-process li:nth-child(4) .teach-process-icon img {
+    width: vw-pc(64);
+  }
+
+  .teach-process li:nth-child(5) .teach-process-icon img {
+    width: vw-pc(65);
+  }
+
+  .teach-process-illust01 {
+    top: vw-pc(83);
+    right: vw-pc(60);
+    width: vw-pc(95);
+  }
+
+  .teach-process-illust02 {
+    top: vw-pc(460);
+    right: vw-pc(113);
+    width: vw-pc(158);
+  }
+
+  .teach-process-illust03 {
+    bottom: vw-pc(205);
+    right: vw-pc(75);
+    width: vw-pc(87);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .teach-process-box {
+    padding: 60px 80px;
+  }
+
+  .teach-process li {
+    margin-bottom: 40px;
+  }
+
+  .teach-process li:after {
+    left: 90px;
+    width: 10px;
+  }
+
+  .teach-process-circle {
+    width: 180px;
+    height: 180px;
+  }
+
+  .teach-process-num {
+    font-size: 18px; font-size: 1.8rem;
+  }
+
+  .teach-process-content {
+    width: 825px;
+  }
+
+  .teach-process-head {
+    font-size: 24px; font-size: 2.4rem;
+  }
+
+  .teach-process li:nth-child(1) .teach-process-icon img {
+    width: 55px;
+  }
+
+  .teach-process li:nth-child(2) .teach-process-icon img {
+    width: 75px;
+  }
+
+  .teach-process li:nth-child(3) .teach-process-icon img {
+    width: 51px;
+  }
+
+  .teach-process li:nth-child(4) .teach-process-icon img {
+    width: 64px;
+  }
+
+  .teach-process li:nth-child(5) .teach-process-icon img {
+    width: 65px;
+  }
+
+  .teach-process-illust01 {
+    top: 83px;
+    right: 60px;
+    width: 95px;
+  }
+
+  .teach-process-illust02 {
+    top: 460px;
+    right: 113px;
+    width: 158px;
+  }
+
+  .teach-process-illust03 {
+    bottom: 165px;
+    right: 75px;
+    width: 87px;
+  }
+}
+
+/* ---------------------------------- concept --> section */
+
+.sec--teach-voice {
+  padding: vw-sp(100) 0 vw-sp(80) 0;
+  background-color: #e7f5f9;
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .sec--teach-voice {
+    padding: vw-pc(75) 0 vw-pc(120) 0;;
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .sec--teach-voice {
+    padding: 75px 0 120px 0;
+  }
+}
+
+
+/* ---------------------------------- concept --> heading */
+
+.cmn-head--teach-voice {
+  margin-bottom: vw-sp(85);
+  text-align: center;
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .cmn-head--teach-voice {
+    margin-bottom: vw-pc(65);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .cmn-head--teach-voice {
+    margin-bottom: 65px;
+  }
+}
+
+
+/* ---------------------------------- concept --> conponent */
+
+.teach-voice li {
+  margin: 0 auto vw-sp(80) auto;
+  padding: vw-sp(30);
+  width: vw-sp(640);
+  background-color: $color-base;
+}
+
+.teach-voice li:last-child {
+  margin-bottom: 0;
+}
+
+.teach-voice-fukidashi {
+  position: relative;
+  margin-bottom: vw-sp(30);
+  padding: 1em;
+  background-color: #f8f8f8;
+  border-radius: vw-sp(15);
+  div {
+    height: vw-sp(300);
+    overflow-y: auto;
+  }
+  p {
+    font-weight: 700;
+    line-height: 1.8em;
+  }
+}
+
+.teach-voice-fukidashi:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: vw-sp(85);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: vw-sp(15) vw-sp(15) 0 vw-sp(15);
+  border-color: #f8f8f8 transparent transparent transparent;
+}
+
+.teach-voice-contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.teach-voice-image {
+  width: vw-sp(200);
+  img {
+    border-radius: 50%;
+  }
+}
+
+.teach-voice-content {
+  width: vw-sp(350);
+  p {
+    line-height: 1.8em;
+  }
+}
+
+.teach-voice-head {
+  margin-bottom: .5em;
+  font-size: 1.125em;
+  font-weight: 700;
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .teach-voice {
+    display: flex;
+    justify-content: space-between
+  }
+
+  .teach-voice li {
+    margin: 0;
+    padding: vw-pc(20);
+    width: vw-pc(410);
+  }
+
+  .teach-voice-fukidashi {
+    margin-bottom: vw-pc(20);
+    border-radius: vw-pc(10);
+    div {
+      height: vw-pc(210);
+    }
+  }
+
+  .teach-voice-fukidashi:after {
+    left: vw-pc(45);
+    border-width: vw-pc(10) vw-pc(10) 0 vw-pc(10);
+  }
+
+  .teach-voice-image {
+    width: vw-pc(112);
+  }
+
+  .teach-voice-content {
+    width: vw-pc(205);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .teach-voice li {
+    padding: 20px;
+    width: 380px;
+  }
+
+  .teach-voice-fukidashi {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    div {
+      height: 210px;
+    }
+  }
+
+  .teach-voice-fukidashi:after {
+    left: 45px;
+    border-width: 10px 10px 0 10px;
+  }
+
+  .teach-voice-image {
+    width: 112px;
+  }
+
+  .teach-voice-content {
+    width: 205px;
+  }
+}
+
+
+/* ---------------------------------- concept --> section */
+
+.sec--teach-commit {
+  padding: vw-sp(120) 0 vw-sp(110) 0;
+  background-color: $color-base;
+}
+
+.sec--teach-commit:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  width: vw-sp(350);
+  height: vw-sp(418);
+  background-image: url(../img/teach/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .sec--teach-commit {
+    padding: vw-pc(125) 0 vw-pc(120) 0;;
+  }
+
+  .sec--teach-commit:before {
+    width: vw-pc(295);
+    height: vw-pc(352);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .sec--teach-commit {
+    padding: 125px 0 120px 0;
+  }
+
+  .sec--teach-commit:before {
+    width: 295px;
+    height: 352px;
+  }
+}
+
+
+/* ---------------------------------- concept --> heading */
+
+.teach-commit-head {
+  margin-bottom: 1em;
+  font-size: vw-sp(40);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.6em;
+  letter-spacing: .2em;
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .teach-commit-head {
+    margin-bottom: .5em;
+    font-size: vw-pc(30);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .teach-commit-head {
+    font-size: 30px; font-size: 3.0rem;
+  }
+}
+
+
+/* ---------------------------------- concept --> conponent */
+
+
+.teach-commit {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.teach-commit-image {
+  align-self: flex-end;
+  width: vw-sp(96);
+}
+
+.teach-commit-content {
+  width: vw-sp(570);
+  p {
+    font-size: 1.125em;
+    line-height: 1.8em;
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .teach-commit {
+    align-items: center;
+    width: vw-pc(810);
+  }
+
+  .teach-commit-image {
+    align-self: center;
+    width: vw-pc(86);
+  }
+
+  .teach-commit-content {
+    width: vw-pc(700);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .teach-commit {
+    width: 810px;
+  }
+
+  .teach-commit-image {
+    width: 86px;
+  }
+
+  .teach-commit-content {
+    width: 700px;
+  }
+}
+
+/* ---------------------------------- apply --> section */
+
+.sec--teach-apply {
+  padding: vw-sp(100) 0;
+  background-image: url(../img/teach/apply-bg.jpg);
+  background-size: cover;
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .sec--teach-apply {
+    padding: vw-pc(115) 0;;
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .sec--teach-apply {
+    padding: 115px 0;
+  }
+}
+
+
+/* ---------------------------------- apply --> heading */
+
+.teach-apply-head {
+  margin-bottom: .5em;
+  background: linear-gradient( to right,  #1dd5e6 25%, #46aef7 75% );
+  color: transparent;
+  -webkit-background-clip: text;
+  font-size: vw-sp(40);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.6em;
+  letter-spacing: .2em;
+}
+
+@media all and (-ms-high-contrast: none) { /* IE10,11用 */
+  .teach-apply-head {
+    background: none;
+    color: #1dd5e6;
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .teach-apply-head {
+    font-size: vw-pc(30);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .teach-apply-head {
+    font-size: 30px; font-size: 3.0rem;
+  }
+}
+
+/* ---------------------------------- apply --> conponent */
+
+.teach-apply-content p {
+  font-size: 1.125em;
+  font-weight: 700;
+  text-align: center;
+  line-height: 2em;
+}
+
+.teach-apply-btn {
+  margin: vw-sp(40) auto 0 auto;
+  width: vw-sp(640);
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .teach-apply-btn {
+    margin: vw-pc(30) auto 0 auto;
+    width: vw-pc(560);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .teach-apply-btn {
+    margin: 30px auto 0 auto;
+    width: 560px;
+  }
+}

@@ -1,0 +1,59 @@
+// main: ../style.scss
+
+/*  common
+------------------------------------------------------------------------------*/
+
+/* ---------------------------------- check-list */
+
+.check-list li {
+  position: relative;
+  margin-bottom: .5em;
+  padding-left: vw-sp(40);
+  font-size: vw-sp(26);
+  line-height: 1.8em;
+}
+
+.check-list li:last-child {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.check-list li:before {
+  content: '';
+  position: absolute;
+  top: .4em;
+  left: 0;
+  display: inline-block;
+  width: vw-sp(29);
+  height: vw-sp(29);
+  background-image: url(../img/common/check_b.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+@media screen and (min-width: $breakpoint1) {
+
+  .check-list li {
+    padding-left: vw-pc(30);
+    font-size: vw-pc(16);
+  }
+
+  .check-list li:before {
+    width: vw-pc(19);
+    height: vw-pc(19);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .check-list li {
+    padding-left: 30px;
+    font-size: 16px; font-size: 1.6rem;
+  }
+
+  .check-list li:before {
+    width: 19px;
+    height: 19px;
+  }
+}

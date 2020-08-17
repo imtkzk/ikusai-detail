@@ -1,0 +1,72 @@
+// main: ../style.scss
+
+/*  heading
+------------------------------------------------------------------------------*/
+
+/* ---------------------------------- common heading */
+
+.cmn-head {
+  position: relative;
+}
+
+.cmn-head__en {
+  margin-bottom: 1.3em;
+  padding-left: .15em;
+  color: $color-main;
+  font-family: $font2;
+  font-size: vw-sp(25);
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+}
+
+.cmn-head__jp {
+  padding-left: .2em;
+  font-size: vw-sp(40);
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: .2em;
+  z-index: 2;
+}
+
+.cmn-head__desc {
+  margin-top: 1em;
+  font-size: vw-sp(28);
+  text-align: center;
+  line-height: 1.8em;
+  strong {
+    font-weight: 700;
+    @include marker;
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .cmn-head__en {
+    font-size: vw-pc(15);
+  }
+
+  .cmn-head__jp {
+    font-size: vw-pc(30);
+  }
+
+  .cmn-head__desc {
+    font-size: vw-pc(18);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .cmn-head__en {
+    font-size: 15px; font-size: 1.5rem;
+  }
+
+  .cmn-head__jp {
+    font-size: 30px; font-size: 3.0rem;
+  }
+
+  .cmn-head__desc {
+    font-size: 18px; font-size: 1.8rem;
+  }
+}

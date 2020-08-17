@@ -1,0 +1,246 @@
+// main: ../style.scss
+
+/*  modal
+------------------------------------------------------------------------------*/
+
+/* ---------------------------------- common modal */
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: .6s;
+}
+
+.modal.is-show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__in {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  max-width: vw-sp(690);
+  padding: vw-sp(90) vw-sp(40) vw-sp(60) vw-sp(40);
+  background-color: $color-base;
+  border-radius: vw-sp(15);
+  z-index: 2;
+}
+
+.close-btn {
+  position: absolute;
+  right: vw-sp(25);
+  top: vw-sp(25);
+  text-align: center;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.close-btn:before {
+  content: '×';
+  font-size: vw-sp(42);
+  letter-spacing: 0;
+}
+
+.close-btn:hover {
+  opacity: .7;
+}
+
+.modal-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.6);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.modal-head {
+  margin-bottom: 2em;
+  font-size: vw-sp(30);
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.5em;
+  letter-spacing: .2em;
+}
+
+.modal-head--left {
+  margin-bottom: 1em !important;
+  text-align: left;
+}
+
+.modal-subhead {
+  margin-bottom: 1em;
+  font-weight: 700;
+}
+
+@media screen and (max-width: $breakpoint1-max) {
+
+  .modal.is-show {
+    height: 100vh;
+    overflow-y: auto;
+  }
+
+  .modal.is-show .modal__in {
+    top: 0;
+    margin: vw-sp(50) 0;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .modal__in {
+    width: 80%;
+    max-width: vw-pc(640);
+    padding: vw-pc(55) vw-pc(60) vw-pc(50) vw-pc(60);
+    border-radius: vw-pc(10);
+  }
+
+  .modal--large .modal__in {
+    max-width: vw-pc(1100);
+  }
+
+
+  .close-btn {
+    top: vw-pc(15);
+    right: vw-pc(15);
+  }
+
+  .close-btn:before {
+    font-size: vw-pc(32);
+  }
+
+  .modal-head {
+    margin-bottom: 1.5em;
+    font-size: vw-pc(24);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .modal__in {
+    max-width: 600px;
+    padding: 55px 60px 50px 60px;
+    border-radius: 10px;
+  }
+
+  .modal--large .modal__in {
+    max-width: 1000px;
+  }
+
+  .close-btn {
+    top: 15px;
+    right: 15px;
+  }
+
+  .close-btn:before {
+    font-size: 32px; font-size: 3.2rem;
+  }
+
+  .modal-head {
+    font-size: 24px; font-size: 2.4rem;
+  }
+
+}
+
+
+
+.payment-modal-top {
+  margin-bottom: vw-sp(60);
+  width: 100%;
+}
+
+.payment-modal-bottom {
+  width: 100%;
+}
+
+.payment-modal-btn {
+  margin: vw-sp(35) auto 0 auto;
+  width: 100%;
+  .cmn-btn {
+    border: none !important;
+  }
+}
+
+.form-consent--left {
+  text-align: left;
+}
+
+.payment-modal .form-consent--left {
+  margin: 0 !important;
+}
+
+.payment-modal-credit {
+  margin-bottom: 2em;
+  width: vw-sp(400);
+}
+
+@media screen and (max-width: $breakpoint1-max) {
+
+  .payment-modal .form-consent--left {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .payment-modal {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .payment-modal-top {
+    margin-bottom: 0;
+    width: vw-pc(500);
+  }
+
+  .payment-modal-bottom {
+    width: vw-pc(420);
+  }
+
+  .form-input-harf {
+    display: flex;
+    justify-content: space-between;
+    dl {
+      width: 48%;
+    }
+  }
+
+  .payment-modal-btn {
+    margin: vw-pc(25) auto 0 auto;
+  }
+
+  .payment-modal-credit {
+    width: vw-pc(236);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .payment-modal-top {
+    width: 500px;
+  }
+
+  .payment-modal-bottom {
+    width: 320px;
+  }
+
+  .payment-modal-btn {
+    margin: 25px auto 0 auto;
+  }
+
+  .payment-modal-credit {
+    width: 236px;
+  }
+}

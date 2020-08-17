@@ -1,0 +1,30 @@
+//compileExpanded: ../css/$1.css
+
+@import 'base/reset';
+@import 'base/variable';
+@import 'base/base';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/main';
+
+@import 'project/common';
+@import 'project/front/hero';
+@import 'project/front/campaign';
+@import 'project/front/course';
+@import 'project/front/what';
+@import 'project/front/reason';
+@import 'project/front/interview';
+@import 'project/front/apply';
+@import 'project/front/about';
+
+@import 'project/page/detail';
+@import 'project/page/pay';
+@import 'project/page/thanks';
+@import 'project/page/teach';
+
+@import 'component/heading';
+@import 'component/button';
+@import 'component/modal';
+@import 'component/form';
+
+@import 'base/utils';

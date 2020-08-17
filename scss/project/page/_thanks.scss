@@ -1,0 +1,126 @@
+// main: ../../style.scss
+
+/*  thanks
+------------------------------------------------------------------------------*/
+
+/* ---------------------------------- section */
+
+.sec--thanks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: vw-sp(600);
+  overflow: hidden;
+}
+
+.sec--thanks:before,
+.sec--thanks:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.sec--thanks:before {
+  left: vw-sp(-80);
+  width: vw-sp(308);
+  height: vw-sp(750);
+  background-image: url(../img/bg/bg-left.png);
+}
+
+.sec--thanks:after {
+  right: vw-sp(-80);
+  width: vw-sp(330);
+  height: vw-sp(726);
+  background-image: url(../img/bg/bg-right.png);
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .sec--thanks {
+    height: vw-pc(530);
+  }
+
+  .sec--thanks:before {
+    left: 0;
+    width: vw-pc(308);
+    height: vw-pc(750);
+  }
+
+  .sec--thanks:after {
+    right: 0;
+    width: vw-pc(330);
+    height: vw-pc(726);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .sec--thanks {
+    height: 530px;
+  }
+
+  .sec--thanks:before {
+    width: 308px;
+    height: 750px;
+  }
+
+  .sec--thanks:after {
+    width: 330px;
+    height: 726px;
+  }
+}
+
+
+/* ---------------------------------- thanks-sec-head */
+
+.thanks-sec-head {
+  font-size: vw-sp(46);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.8em;
+  letter-spacing: .2em;
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .thanks-sec-head {
+    font-size: vw-pc(36);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .thanks-sec-head {
+    font-size: 36px; font-size: 3.6rem;
+  }
+}
+
+
+/* ---------------------------------- btn */
+
+.thanks-btn {
+  margin: vw-sp(60) auto 0 auto;
+  width: vw-sp(500);
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .thanks-btn {
+    margin: vw-pc(50) auto 0 auto;
+    width: vw-pc(435);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .thanks-btn {
+    margin: 50px auto 0 auto;
+    width: 435px;
+  }
+}

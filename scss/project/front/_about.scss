@@ -1,0 +1,185 @@
+// main: ../../style.scss
+
+/*  about
+------------------------------------------------------------------------------*/
+
+/* ---------------------------------- section */
+
+.sec--about > div {
+  padding: vw-sp(40) vw-sp(50);
+  background-size: cover;
+}
+
+.sec--about > div:nth-child(1) {
+  background-image: url(../img/about/bg01.jpg);
+}
+
+.sec--about > div:nth-child(2) {
+  background-image: url(../img/about/bg02.jpg);
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .sec--about {
+    display: flex;
+    > div {
+      padding: vw-pc(90) vw-pc(100);
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .sec--about > div {
+    padding: 90px 100px;
+  }
+}
+
+
+@media screen and (min-width: 1700px) {
+
+  .sec--about > div {
+    padding: 90px 5%;
+  }
+}
+
+/* ---------------------------------- component */
+
+.about-box {
+  position: relative;
+  padding: vw-sp(60) vw-sp(30);
+  border: vw-sp(3) solid $color-text;
+}
+
+.about-head {
+  margin-bottom: 1.5em;
+  font-size: vw-sp(34);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.8em;
+  letter-spacing: .2em;
+}
+
+.about-content {
+  position: relative;
+  p {
+    margin-bottom: 2em;
+    line-height: 2.3em;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.about-btn {
+  margin: vw-sp(60) auto 0 auto;
+}
+
+.about-btn--01 {
+  width: vw-sp(300);
+}
+
+.about-btn--02 {
+  width: 100%;
+}
+
+.about-image {
+  position: absolute;
+}
+
+.about-image--01 {
+  bottom: vw-sp(130);
+  right: vw-sp(-20);
+  width: vw-sp(180);
+}
+
+.about-image--02 {
+  top: vw-sp(-30);
+  right: vw-sp(50);
+  width: vw-sp(67);
+}
+
+
+@media screen and (min-width: $breakpoint1) {
+
+  .about-box {
+    position: relative;
+    padding: vw-pc(55) vw-pc(45);
+    height: vw-pc(650);
+    border: vw-pc(2) solid $color-text;
+  }
+
+  .about-head {
+    font-size: vw-pc(24);
+  }
+
+  .about-btn {
+    margin: vw-pc(40) auto 0 auto;
+  }
+
+  .about-btn--01 {
+    width: vw-pc(230);
+  }
+
+  .about-btn--02 {
+    width: vw-pc(460);
+  }
+
+  .about-image--01 {
+    bottom: vw-pc(20);
+    right: vw-pc(-50);
+    width: vw-pc(258);
+  }
+
+  .about-image--02 {
+    top: vw-pc(-30);
+    right: vw-pc(50);
+    width: vw-pc(67);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .about-box {
+    padding: 55px 55px;
+    height: 625px;
+    border: 2px solid $color-text;
+  }
+
+  .about-head {
+    font-size: 24px; font-size: 2.4rem;
+  }
+
+  .about-btn {
+    margin: 40px auto 0 auto;
+  }
+
+  .about-btn--01 {
+    width: 230px;
+  }
+
+  .about-btn--02 {
+    width: 460px;
+  }
+
+  .about-image--01 {
+    bottom: 20px;
+    right: -50px;
+    width: 258px;
+  }
+
+  .about-image--02 {
+    top: -30px;
+    right: 50px;
+    width: 67px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+
+  .about-box {
+    height: auto;
+    min-height: 40%;
+  }
+}
